@@ -48,6 +48,11 @@ $(document)
     $('.ui.sidebar')
       .sidebar('attach events', '#mobileNav')
 
+    $('.masthead .nav-link').hover(
+      function () { $(this).addClass('active') },
+      function () { $(this).removeClass('active') }
+    )
+
     // enable nav links
     $('.nav-link').click(function() {
       let href = $(this).attr('href')

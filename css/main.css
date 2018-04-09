@@ -83,6 +83,10 @@ h1, h2, h4, h5 {
 .masthead {
     padding-top: 0px !important;
 }
+
+.masthead .nav-link.active {
+    font-weight: normal !important;
+}
 /* Nav Menu */
 #mobileNav {
     display: none;
