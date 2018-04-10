@@ -1,27 +1,32 @@
-.hidden.menu {
+/* TYOPGRAPHY */
+h1, h2, h4, h5 {
+    font-family: 'Vollkorn', serif !important;
+}
+
+/* NAVIGATION */
+
+/* Fixed Nav */
+#fixedNav {
     display: none;
 }
 
+#fixedNav img {
+    cursor: pointer;
+    padding: 0.6em 0 0.6em 1.14286em;
+    max-width: 200px;
+}
+
+/* Masthead */
 .masthead.segment {
     min-height: 100vh;
+    background-image: url('../../img/genetics.png') !important;
+    background-size: cover !important;
     padding: 1em 0em;
 }
 
 #fixedNavStart {
     position: relative;
     bottom: 70px;
-}
-.masthead .logo.item img {
-    margin-right: 1em;
-}
-.masthead .ui.menu .ui.button {
-    margin-left: 0.5em;
-}
-.masthead h1.ui.header {
-    margin-top: 1.5em;
-    margin-bottom: 0em;
-    font-size: 4em;
-    font-weight: normal;
 }
 
 #splashLogo {
@@ -37,11 +42,34 @@
 
 .masthead .button {
     background: #59AD70 !important;
+    transition: background 0.2s;
 }
 .masthead .button:hover {
     background: #5cb573 !important;
+
 }
 
+.masthead .nav-link.active {
+    font-weight: normal !important;
+}
+
+#nav .menu {
+    border: none !important;
+}
+
+#nav .menu a {
+    color: white !important;
+}
+
+#mobileNav {
+    display: none;
+    z-index: 100 !important;
+    position: fixed !important;
+    right: 0em !important;
+    bottom: 1em !important;
+}
+
+/* Section */
 .ui.vertical.stripe {
     padding: 8em 0em;
 }
@@ -62,6 +90,10 @@
     margin: 3em 0em;
 }
 
+.ui.vertical.segment {
+    border-bottom: 0;
+}
+
 .quote.stripe.segment {
     padding: 0em;
 }
@@ -71,68 +103,25 @@
 }
 
 .footer.segment {
-    padding: 5em 0em;
+    padding: 4em 0em;
     background: #F6F6F6 !important;
 }
 
-/* CUSTOMIZATIONS */
-h1, h2, h4, h5 {
-    font-family: 'Vollkorn', serif !important;
-}
-
-.masthead {
-    padding-top: 0px !important;
-}
-
-.masthead .nav-link.active {
-    font-weight: normal !important;
-}
-/* Nav Menu */
-#mobileNav {
-    display: none;
-    z-index: 100 !important;
-    position: fixed !important;
-    right: 0em !important;
-    bottom: 1em !important;
-}
-
-.fixed.menu img {
-    padding: 0.6em 0 0.6em 1.14286em;
-    max-width: 200px;
-}
-
-.ui.vertical.segment {
-    border-bottom: 0;
-}
-
-#nav .menu {
-    border: none !important;
-}
-
-#nav .menu a {
-    color: white !important;
-}
-
-.landing-image {
-    background-image: url('../img/genetics.png') !important;
-    background-size: cover !important;
-}
-
-/* Offerings Section */
-#offerings h2 {
+/* Services Section */
+#services h2 {
     font-size: 3.5em !important;
     padding-bottom: 1em;
 }
 
-#offerings h3 {
+#services h3 {
     font-size: 2em !important;
 }
 
-#offerings .list .header {
+#services .list .header {
     font-weight: 400 !important;
 }
 
-#offerings .selection .item {
+#services .selection .item {
     cursor: default;
 }
 
@@ -140,8 +129,7 @@ h1, h2, h4, h5 {
     border: none !important;
 }
 
-
-#offerings i {
+#services i {
     color: #59AD70 !important;
 }
 
@@ -174,6 +162,7 @@ h1, h2, h4, h5 {
 
 #contact .email-link {
     margin-top: 1.5em;
+    transition: color 0.2s;
 }
 
 #contact .email-link:hover {
@@ -193,6 +182,7 @@ h1, h2, h4, h5 {
     text-align: center !important;
 }
 
+/* MOBILE/TABLET */
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
         display: none !important;
@@ -203,9 +193,6 @@ h1, h2, h4, h5 {
     }
     #mobileNav {
         display: block;
-    }
-    .masthead.segment {
-        min-height: 100vh;
     }
     .masthead h1.ui.header {
         font-size: 2em;

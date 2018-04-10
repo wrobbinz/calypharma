@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
         <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="dist/css/style.min.css">
         <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     </head>
     <body>
@@ -18,21 +18,21 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Fixed Nav Menu-->
-        <div class="ui large top fixed inverted hidden menu">
+        <!-- Fixed Nav -->
+        <div id="fixedNav" class="ui large top fixed inverted hidden menu">
             <div class="ui large screen only container">
-                <img src="./img/calypharma.svg" width="200px" height="70">
+                <img href="#nav" class="nav-link" src="./img/calypharma.svg" width="200px" height="70">
                 <div class="right menu">
-                    <a href="#offerings" class="nav-link item">Offerings</a>
+                    <a href="#services" class="nav-link item">Services</a>
                     <a href="#team" class="nav-link item">About</a>
                     <a href="#contact" class="nav-link item">Contact</a>
                 </div>
             </div>
         </div>
 
-        <!-- Sidebar Menu -->
+        <!-- Mobile Sidebar Menu -->
         <div class="ui vertical inverted right sidebar menu">
-            <a href="#offerings" class="nav-link item">Offerings</a>
+            <a href="#services" class="nav-link item">Services</a>
             <a href="#team" class="nav-link item">About</a>
             <a href="#contact" class="nav-link item">Contact</a>
         </div>
@@ -41,28 +41,26 @@
         <!-- Page Contents -->
         <div class="pusher">
             <div class="ui vertical inverted masthead center aligned segment landing-image">
-
+                <!-- Top Nav-->
                 <div id="nav" class="entry" style="display: none">
                     <div class="ui large secondary inverted pointing menu">
                         <a id="mobileNav" class="item">
                             <i class="sidebar large icon"></i>
                         </a>
                         <div class="right item">
-                            <a href="#offerings" class="nav-link item">Offerings</a>
+                            <a href="#services" class="nav-link item">Services</a>
                             <a href="#team" class="nav-link item">About</a>
                             <a href="#contact" class="nav-link item">Contact</a>
                         </div>
                     </div>
                 </div>
-
+                <!-- Splash -->
                 <div class="ui text container entry" style="display: none">
-                    <!-- <h1 class="ui inverted header">
-                    </h1> -->
                     <img id="splashLogo" class="ui image" src="./img/calypharma.svg">
                     <h3>
                          Specializing in IND enabling development for <br/> advanced therapies and unique drugs
                     </h3>
-                    <a href="#offerings" class="nav-link">
+                    <a href="#services" class="nav-link">
                         <div class="ui huge primary button">See what we can do
                             <i class="right arrow icon"></i>
                         </div>
@@ -70,9 +68,9 @@
                 </div>
             </div>
             <div id="fixedNavStart"></div>
-            <!-- What We Do Section -->
-            <div id="offerings" class="ui very padded basic segment">
-                <h2 class="center-aligned">Offerings</h2>
+            <!-- Services Section -->
+            <div id="services" class="ui very padded basic segment">
+                <h2 class="center-aligned">Services</h2>
                 <div class="ui middle aligned stackable grid container">
                     <div class="row">
                         <div class="seven wide column">
@@ -166,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <!-- About Section -->
+            <!-- Team Section -->
             <div id="team" class="ui vertical stripe segment">
                 <div class="ui middle aligned stackable grid container">
                     <div class="center-aligned row">
@@ -175,10 +173,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="two wide left floated column">
+                        <div class="three wide tablet two wide computer left floated column">
                             <img src="./img/placeholder.png" data-src="./img/joan.jpg" class="ui large bordered circular image about-img lazyload" alt="Joan Robbins PhD">
                         </div>
-                        <div class="twelve wide column">
+                        <div class="eleven wide tablet twelve wide computer column">
                             <h3 class="ui header">Joan Robbins, PhD, President</h3>
                             <p>
                                  Joan specializes in preclinical and clinical development, biologics and virus manufacturing, and regulatory interactions
@@ -194,10 +192,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="two wide left floated column">
+                        <div class="three wide tablet two wide computer left floated column">
                             <img src="./img/placeholder.png" data-src="./img/rob.png" class="ui large bordered circular image about-img lazyload" alt="Rob Robbins">
                         </div>
-                        <div class="twelve wide column">
+                        <div class="eleven wide tablet twelve wide computer column">
                             <h3 class="ui header">Rob Robbins, Chief Financial Officer</h3>
                             <p>
                                  Rob’s expertise is in contracting, finance, and project management.  He has over 15 years of experience as Chief Financial
@@ -213,7 +211,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Contact-->
             <div id="contact" class="ui vertical stripe segment center-aligned">
                 <div class="ui text container">
                     <h2 class="ui header">
@@ -244,12 +242,12 @@
                     </div> -->
                 </div>
             </div>
-
-
+            <!-- Footer -->
             <div class="ui vertical footer segment">
                 <div class="ui container">
                     <div class="ui stackable divided equal height stackable grid">
                         <div class="center-aligned column">
+                            <img src="./img/leaf.svg" width="100px" height="50">
                             <h4 class="ui header">Calypharma Consulting Inc.</h4>
                             <p>&copy; 2018</p>
                         </div>
@@ -257,18 +255,11 @@
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="semantic/dist/semantic.min.js"></script>
-        <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
-        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script> -->
-        <!-- <script src="js/plugins.js"></script> -->
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <!-- <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script src="dist/js/app.min.js"></script>
     </body>
 </html>
