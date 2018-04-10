@@ -65,7 +65,7 @@ h1, h2, h4, h5 {
     display: none;
     z-index: 100 !important;
     position: fixed !important;
-    right: 0em !important;
+    left: 0em !important;
     bottom: 1em !important;
 }
 
@@ -184,6 +184,10 @@ h1, h2, h4, h5 {
 
 /* MOBILE/TABLET */
 @media only screen and (max-width: 700px) {
+    .sidebar a {
+        font-size: 2em;
+    }
+
     .ui.fixed.menu {
         display: none !important;
     }
