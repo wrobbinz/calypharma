@@ -187,6 +187,9 @@ h1, h2, h4, h5 {
     .ui.fixed.menu {
         display: none !important;
     }
+    #fixedNavStart {
+        bottom: 0px;
+    }
     .secondary.pointing.menu .item,
     .secondary.pointing.menu .menu {
         display: none;
