@@ -53,7 +53,7 @@ gulp.task('files', () => {
 
 gulp.task('semantic', () => {
   gulp.src('semantic/**/*')
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist/semantic'))
 })
 
 /* Build */
