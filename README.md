@@ -1,13 +1,13 @@
 # 🌿 Calypharma Consulting Inc
 
-## Get Started
+## Setup
 
 Main things to do are to install build dependecies, build the site `/dist` and build semantic.
 
 1. `npm install`
-2. `gulp build`
-3. Choose default semantic installations `./semantic`
-4. `cd ./semantic` && `gulp build`
+2. Choose default semantic installations `./semantic`
+3. `cd ./semantic` && `gulp build`
+4. Return to root folder and `gulp build`
 
 ## Development
 
