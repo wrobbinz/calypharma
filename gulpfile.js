@@ -53,8 +53,13 @@ gulp.task('files', () => {
     .pipe(gulp.dest('dist'))
 })
 
+gulp.task('semantic', () => {
+  gulp.src('semantic')
+    .pipe(gulp.dest('dist'))
+})
+
 /* Build */
-gulp.task('build', ['html', 'scripts', 'styles', 'images', 'files'])
+gulp.task('build', ['html', 'scripts', 'styles', 'images', 'files', 'semantic'])
 /* Watch(build) */
 gulp.task('watch', () => {
   gulp.watch('src/**', ['build'])
