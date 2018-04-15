@@ -41,7 +41,6 @@ $(document).ready(() => {
       scrollTop: $(href).offset().top,
     }, 500)
   })
-
   /* Animations */
   /* Nav Links: add hover 'active' effect */
   $('.masthead .nav-link').hover(
@@ -61,4 +60,7 @@ $(document).ready(() => {
       transition: 'fade in',
       duration: 1000,
     })
+  /* Dynamic copyright */
+  $('#copyright span')
+    .text(` 2016 - ${new Date().getFullYear()}`)
 })
