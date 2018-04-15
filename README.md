@@ -1,4 +1,4 @@
-# 🌿 Calypharma Consulting Inc.
+# 🌿 Calypharma Consulting Inc
 
 ## Get Started
 
