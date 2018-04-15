@@ -41,16 +41,18 @@ gulp.task('images', () => {
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img'))
 })
-/* Other */
-gulp.task('favicon', () => {
-  gulp.src('src/favicon.ico')
+/* Files: Move 'em */
+const files = [
+  'src/favicon.ico',
+  'src/robots.txt',
+]
+gulp.task('files', () => {
+  gulp.src(files)
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('other', ['favicon'])
-
 /* Build */
-gulp.task('build', ['html', 'scripts', 'styles', 'images', 'other'])
+gulp.task('build', ['html', 'scripts', 'styles', 'images', 'files'])
 /* Watch(build) */
 gulp.task('watch', () => {
   gulp.watch('src/**', ['build'])
