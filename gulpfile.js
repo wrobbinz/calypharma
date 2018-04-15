@@ -45,6 +45,8 @@ gulp.task('images', () => {
 const files = [
   'src/favicon.ico',
   'src/robots.txt',
+  'semantic/dist/semantic.min.css',
+  'semantic/dist/semantic.min.js',
 ]
 gulp.task('files', () => {
   gulp.src(files)
