@@ -51,13 +51,13 @@ gulp.task('files', () => {
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('semantic', () => {
-  gulp.src('semantic/**/*')
-    .pipe(gulp.dest('dist/semantic'))
-})
+// gulp.task('semantic', () => {
+//   gulp.src('semantic/**/*')
+//     .pipe(gulp.dest('dist/semantic'))
+// })
 
 /* Build */
-gulp.task('build', ['html', 'scripts', 'styles', 'images', 'files', 'semantic'])
+gulp.task('build', ['html', 'scripts', 'styles', 'images', 'files'])
 /* Watch(build) */
 gulp.task('watch', () => {
   gulp.watch('src/**', ['build'])
