@@ -9,7 +9,7 @@
   "author": "@wrobbinz",
   "license": "ISC",
   "dependencies": {
-    "semantic-ui": "^2.3.1"
+    "semantic-ui": "^2.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -17,7 +17,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.10.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-babel": "^7.0.1",
     "gulp-clean-css": "^3.9.3",
